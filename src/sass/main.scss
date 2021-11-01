@@ -1,0 +1,48 @@
+#wrapper {
+  text-align: center;
+}
+#result-detail {
+  text-align: center;
+}
+.heading {
+  text-align: center;
+}
+.card {
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-body {
+  padding: 10px;
+}
+
+.list-item {
+  font-family: inherit;
+  line-height: 1.5;
+  text-align: start;
+}
+
+input {
+  width: 300px;
+  height: 60px;
+
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  color: rgb(80, 21, 80);
+
+  border: 1px solid darkgreen;
+  border-radius: 10px;
+  text-align: center;
+}
+.card-text {
+  text-align: start;
+}
+
+.placeholder {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
