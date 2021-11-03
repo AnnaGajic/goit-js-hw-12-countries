@@ -51,7 +51,12 @@ const getCountries = () => {
     if(!valueFromInput)
         return;
 
-    fetchCountries(valueFromInput).then(resultParser).catch(err => console.log(err)); 
+    fetchCountries(valueFromInput).then(resultParser).catch(err => {
+        PNotify.error({
+            text: 'Too many matches found. Please enter a more specific query',
+            delay: 500,
+          });
+    }); 
 }
 
 const handlerFunction = debounce(getCountries, 500);
